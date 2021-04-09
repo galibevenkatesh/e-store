@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+img{
+ height:150px;
+ width:100%;
+ 
+}
+form{
+    padding:20px;
+    height:500px;
+    width:40%;
+    text-align:center;
+    margin-left:  30%;
+    font-size: medium;
+}
+button{
+    height:30px;
+    width:90%;
+    background-color: greenyellow;
+    margin: 5px;
+   padding:5px;
+}
+input{
+    padding:5px;
+    height:30px;
+    width:90%;
+}
+#check{
+    height: 15px;
+    width:5%;
+}
+label{
+    margin: 2%;
+    font-size: large;
+    
+}
+button:hover{
+    background-color: green;
+}
+</style>
+</head>
+<body>
+
+
+  <form style="background-color: ddd;"  >
+    <h2>Payment Details</h2>
+    <img src="./../pictures/img31.jpg">
+    
+
+    <br>
+    
+      <label align="left" for="uname"><b>CARD NUMBER</b></label><br>
+      <input type="number" placeholder="valid card number" name="uname" required><br>
+      <label align="left" for="email"><b>EXP DATE</b></label><br>
+      <input type="date" placeholder="MM/YY" name="e-mail" required><br>
+      <label align="left" for="psw"><b>CV CODE</b></label><br>
+      <input type="text" placeholder="cv code" name="psw" required><br>
+      <label align="left" for="psw"><b>CARD OWNER NAME</b></label><br>
+      <input type="text" placeholder="Card owner" name="psw" required><br>
+       
+      <button type="submit">PROCESS PAYMENT</button><br>
+     
+    
+  </form>
+
+</body>
+</html>

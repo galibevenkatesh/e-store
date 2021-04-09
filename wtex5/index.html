@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:chocolate;
+            }
+        img{
+            width:100%;
+            height:400px;
+        }
+        .material-icons {vertical-align:-14%}
+        a{
+            padding:5px;
+            text-decoration:none;
+
+        }
+        a:hover{
+            background-color:rgb(42, 110, 236);
+        }
+        .dropbtn {
+            background-color: cornflowerblue;
+            padding: 5px;
+            font-size: 35px;
+            border: none;
+        }
+        .dropbtn:hover{
+          background-color:rgb(42, 110, 236);
+        }
+
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            width: 170px;
+            height:flex;
+            padding:5px;
+            font-size: 17px;  
+            
+        }
+
+        .dropdown-content a{
+           
+           padding: 5px ;
+          display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+    .pictures{
+      height:250px;
+      width:100%;
+    }
+    .link{
+      margin-left:34%;
+      text-decoration:underline;
+      color:red;
+    }
+    .link:hover{
+      background-color: white;
+      color:blue
+    }
+    .box{
+      
+      height:16px;
+      width:16px;
+      margin-left: 1%;;
+    }
+    .books{
+      
+      border: 2px solid black;
+      
+      
+      padding: 7px;
+      width:98%;
+      height: 400px;
+      margin:1%;
+      overflow-y :scroll;
+      
+    }
+
+    .product
+    {
+      margin:0.5%;
+      display:inline-block;
+      padding: 7px;
+      background-color: cornflowerblue;
+      width:18.7%;
+      height:flex;
+    }
+    .product:hover
+    {
+      border:2px solid black ;
+    }
+    #menu_bar{
+      position: relative;
+      position: fixed;
+      top:0%;
+      width:100%;
+      
+
+}  
+  
+    </style>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  </head>
+<body>
+     <!--                              menu bar                                    -->
+    <div id="menu_bar" style="background-color: cornflowerblue; border-bottom:1px solid black; padding:5px; font-size:35px ">
+          <div class="dropdown" >
+             <button class="dropbtn"><i class="fa fa-align-justify" style="font-size:24px"></i></button>
+          
+             <div class="dropdown-content">
+               <a href="./sub/login.html">SIGN IN </a>
+               <a href="./sub/signup.html">SIGN UP</a>
+              </div>
+          </div>
+          <a href="#start">  <i class="material-icons" style="font-size:24px">home</i>
+          </a> <a href="./sub/profile.html"> <i class="fa fa-user-circle" style="font-size:24px"></i>
+          </a> <a><i class='fas fa-cart-arrow-down' style='font-size:24px'></i></a>
+          <a href="./sub/payment.html"><i class='fas fa-money-check' style='font-size:24px'></i></a>
+          <div class="dropdown">
+            <button class="dropbtn"><i class="material-icons" style="font-size:24px">search</i></button>
+            <div class="dropdown-content">
+              <a href="#books1">Data Structures</a>
+              <a href="#books2">Programming Languages</a>
+              <a href="#books3">Story Books</a>
+            </div>
+          </div> 
+    </div>
+    <br id="start"><br><br>
+    <h1 align="center" style="color:red ;"><b>Web Book Store</b></h1>
+    <img src="./lib.jpg"   alt="library image">
+    <br>
+    <!--                              data structure books                                   -->
+    <div class="books" id="books1">
+      <h3  align="center" style="color:red"><b><u>Data structures</u></h3></b>
+      <div class="product">
+          <img class="pictures" src="./pictures/img0.jpg" >
+          <p><b>Data Structure with python</b><br>
+          cost: 450Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img1.jpg" >
+          <p><b>Data Structure and Algorithms</b><br>
+          cost: 500Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img2.jpg" >
+          <p><b>Data Structure </b><br>
+          cost: 700Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img3.jpg" >
+          <p><b>Data Structure and Algorithms</b><br>
+          cost: 200Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img4.jpg" >
+          <p><b>Algorithms</b><br>
+          cost: 350Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img5.jpg" >
+          <p><b>Data Structure in JS </b><br>
+          cost: 999Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img6.jpg" >
+          <p><b>DataStructure in C++</b><br>
+          cost: 1450Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img7.jpg" >
+          <p><b>Advanced Data Structure </b><br>
+          cost: 195Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img8.jpg" >
+          <p><b>Data Structure and Algorithms</b><br>
+          cost: 555Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img9.jpg" >
+          <p><b>Data Structure and Algorithms </b><br>
+          cost: 950Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+
+    </div>
+<!--                              programming books                                   -->
+
+    <div class="books" id="books2">
+      <h3  align="center" style="color:red"><b><u>Programming Languages Books</u></h3></b>
+      <div class="product">
+          <img class="pictures" src="./pictures/img10.jpg" >
+          <p><b>C Programming Language</b><br>
+          cost: 600Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img11.jpg" >
+          <p><b>Programming Language Design Concepts</b><br>
+          cost: 250Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img12.jpg" >
+          <p><b>The Java Programming Language </b><br>
+          cost: 700Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img13.jpg" >
+          <p><b>Programming Language for Python</b><br>
+          cost: 900Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img14.jpg" >
+          <p><b>The GO Programming Language</b><br>
+          cost: 870Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img15.jpg" >
+          <p><b>The Rust Programming Language</b><br>
+          cost: 999Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img16.jpg" >
+          <p><b>The C++ programming Language</b><br>
+          cost: 2450Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img17.jpg" >
+          <p><b>Pro iphone Development with Shift5</b><br>
+          cost: 195Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img18.jpg" >
+          <p><b>Java Script Programming Language</b><br>
+          cost: 555Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img19.jpg" >
+          <p><b>Object-Oriented Programming in C++</b><br>
+          cost: 950Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+
+    </div>
+
+<!--                              story books                                  -->
+
+    <div class="books" id="books3">
+      <h3  align="center" style="color:red"><b><u>Story Books</u></h3></b>
+      <div class="product">
+          <img class="pictures" src="./pictures/img20.jpg" >
+          <p><b>Tenali RamaKrishna</b><br>
+          cost: 458Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img21.jpg" >
+          <p><b>story book</b><br>
+          cost: 200Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img22.jpg" >
+          <p><b>Nerissa Marie</b><br>
+          cost: 120Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img23.jpg" >
+          <p><b>Hare & Tortoise</b><br>
+          cost: 200Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img24.jpg" >
+          <p><b>Magical Stories</b><br>
+          cost: 350Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img25.jpg" >
+          <p><b>stories for 3 </b><br>
+          cost: 99Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img26.jpg" >
+          <p><b>vikram & Betala</b><br>
+          cost: 145Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img27.jpg" >
+          <p><b>Ruusk in Bond </b><br>
+          cost: 195Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img28.jpg" >
+          <p><b>The Thirsty Crow</b><br>
+          cost: 55Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+        <div class="product">
+          <img class="pictures" src="./pictures/img29.jpg" >
+          <p><b>Cinderella </b><br>
+          cost: 950Rs <span align="left"><a class="link" href="./sub/payment.html"> BUY</a></span><br>
+          <input type="checkbox" id="0" class="box">  Add to cart</p>
+        </div>
+
+    </div>
+
+
+
+</body>
+</html>
